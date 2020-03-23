@@ -1,1 +1,130 @@
 @import url('common.css');
+
+html{
+    font-size: 16px;
+}
+.warp{}
+.total_guide{
+    width: 52%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #94fb83;
+}
+
+/* banner_top */
+.banner_top_color{
+    width: 100%;
+}
+.banner_top{
+    width: 100%;
+    background: #5f0080;
+    padding: 1em 0;
+}
+
+.banner_top .total_guide > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_top .total_guide > p span{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.banner_top .total_guide p:nth-of-type(2){
+    display: inline-block;
+    position: absolute;
+    right: 0; top: 0;
+}
+#header{
+    width: 100%;
+    border: 1px solid #5f0080;
+}
+/* header_top */
+.header_top{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.75em;
+}
+.header_top > div{
+    border: 1px solid #dddfe1;
+    padding: 0.2em 0.7em 0.4em;
+    border-radius: 1em / 1em;
+}
+.header_top div > small{
+    font-size: 0.75rem;
+}
+.header_top div > span{
+    font-size: 0.75rem;
+    color: #5f0080;
+}
+.header_top div img{
+    margin-bottom: -2px;
+}
+
+.header_top ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header_top ul li{
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+}
+.header_top ul li:nth-of-type(4){
+    border: none;
+    padding-right: 0;
+}
+.header_top ul li a{}
+.header_top ul li a span{
+    font-size: 0.75rem;
+}
+.header_top ul li > div{}
+.header_top ul li > div a img{}
+.header_top ul .li_center{
+    position: relative;
+}
+.header_top ul .li_center .service_center{
+    display: none;
+    width: 120px;
+    position: absolute;
+    left: 0; top: 1.38em;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+.header_top ul .li_center .service_center a{
+    display: block;
+    padding: 5px 0;
+    font-size: 0.75rem;
+}
+.header_top ul .li_center:hover .service_center{
+    display: block;
+}
+
+div:nth-of-type(2){
+    width: 100%;
+}
+div:nth-of-type(2) p{
+    text-align: center;
+}
+
+/* header_bottom */
+.header_bottom{}
+.header_bottom nav{}
+.header_bottom nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_bottom nav ul li{}
+.header_bottom nav ul li a{}
+.header_bottom nav ul li a img{}
+.header_bottom nav ul li a span{}
+.header_bottom nav ul li form{}
+.header_bottom nav ul li form input{}
+
+
+.header_bottom .header_2depth{
+    display: none;
+}
