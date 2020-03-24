@@ -67,7 +67,9 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.header_top ul li a{}
+.header_top ul li a{
+    padding: 0.2em 0 0.4em;
+}
 .header_top ul li .header_top_nav::after{
     content: '|';
     font-size: 0.75rem;
@@ -80,6 +82,10 @@ html{
 .header_top ul li a span{
     font-size: 0.75rem;
 }
+.header_top ul li:nth-of-type(1) a:hover span{
+    color: #5f0080;
+    font-weight: bold;
+}
 .header_top ul li > div{}
 .header_top ul li > div a img{}
 .header_top ul .li_center{
@@ -90,18 +96,18 @@ html{
     display: none;
     width: 120px;
     position: absolute;
-    left: 0; top: 1.38em;
+    left: -14%; top: 100%;
     padding: 0 10px;
     background: #fff;
     border: 1px solid #ccc;
+}
+.header_top ul .li_center .service_center::before{
+
 }
 .header_top ul .li_center .service_center a{
     display: block;
     padding: 5px 0;
     font-size: 0.75rem;
-}
-.header_top ul .li_center:hover .service_center{
-    display: block;
 }
 
 div:nth-of-type(2){
