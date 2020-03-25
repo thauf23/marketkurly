@@ -38,7 +38,7 @@ html{
 }
 #header{
     width: 100%;
-    border: 1px solid #5f0080;
+    /* border: 1px solid #5f0080; */
 }
 /* header_top */
 .header_top{
@@ -172,6 +172,7 @@ div:nth-of-type(2) p{
 }
 .header_bottom .depth_2_open{
     display: block;
+    border: 1px solid greenyellow;
 }
 .header_bottom .header_2depth ul{
     width: 22%;
@@ -179,7 +180,6 @@ div:nth-of-type(2) p{
     border: 1px solid #ccc;
 }
 .header_bottom .header_2depth ul li{
-  
     width: 100%;
 }
 .header_bottom .header_2depth ul li a{
@@ -199,20 +199,13 @@ div:nth-of-type(2) p{
 }
 
 /* 3depth */
-.header_bottom .header_2depth ul li .nav_open{
-    display: block;
-}
 .header_bottom .header_2depth ul li div{
-    width: 0;
+    width: 0; height: 0;
     position: absolute;
     left: 100%; top: -1px;
     background: #f7f7f7;
     border: 1px solid #ccc;
-    overflow: hidden;
-}
-.header_bottom .header_2depth ul li .depth_3_open{
-    display: block;
-    width:100%;
+    /* overflow: hidden; */
 }
 .header_bottom .header_2depth ul li div > a{
     font-size: 0.8125rem;
@@ -225,3 +218,17 @@ div:nth-of-type(2) p{
 .header_bottom .header_2depth ul li div > a:hover span{
     border-bottom: 1px solid #5f0080;
 }
+
+/* last_menu */
+/* .header_bottom .header_2depth ul li .last_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid greenyellow;
+}
+.header_bottom .header_2depth ul li .last_menu a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid greenyellow;
+} */

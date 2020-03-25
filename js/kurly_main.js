@@ -31,13 +31,18 @@ $(function(){
         var h2Depth = $('.header_2depth ul').outerHeight();
         $('.header_2depth ul li div').css({
             height: h2Depth,
-            width:0
-        }).hide();
+        })
         //$(this).find('div').toggleClass('depth_3_open');
-        // $('.header_2depth ul li div').css({width:0}).hide();
-        $(this).find('div').show().animate({
-            width: 100+'%'
-        },400)
+        $('.header_2depth ul li div').css({width:0}).hide();
+        // if($('.header_2depth ul li:last')){
+        //     $('.header_2depth ul li:last').find('div').css({
+        //         width: 200+'%'
+        //     }).show();
+        // }else{
+            $(this).find('div').show().animate({
+                width: 100+'%'
+            },400)
+        // }
     };
     //  function iconMouseout(){
     //     $(this).find('div').toggleClass('depth_3_open');
