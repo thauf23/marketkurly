@@ -31,59 +31,26 @@ $(function(){
     };
 
     // header_2depth
-    var tarGat;
-    var vegetableP = 'img/main/icon/vegetable_p.png',
-        vegetableB = 'img/main/icon/vegetable_b.png';
-    var fruitP = 'img/main/icon/fruit_p.png',
-        fruitB = 'img/main/icon/fruit_b.png';
+    const colorPurple = '_p';
+    const colorBlack = '_b';
+    var iconSrc; 
     
-    // var iconB = ['img/main/icon/vegetable_b.png',
-    //             'img/main/icon/fruit_b.png' ]
-
     $('.header_2depth ul li').on({
         mouseenter: iconMouseIn,
-        // mouseleave: iconMouseout
+        mouseleave: iconMouseout
     });
     function iconMouseIn(e){
-        var iconP = ['img/main/icon/vegetable_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',
-                    'img/main/icon/fruit_p.png',];
-
-            var liArr = $(this).index();
-            // if(){
-                // $('.header_2depth ul li').eq(i).find('img').attr('src',iconP[i]);
-                $(this).find('img').attr('src',iconP[liArr]);
-            // }
-            console.log(liArr)
-        // }
+        e.preventDefault();
+        var iconSrc = $(this).find('.icon_change img').attr('src');
+        var imgChangeP = iconSrc.replace(colorBlack,colorPurple);
+        $(this).find('.icon_change img').attr('src',imgChangeP);
+    };
+    function iconMouseout(e){
+        e.preventDefault();
+        var iconSrc = $(this).find('.icon_change img').attr('src');
+        var imgChangeB= iconSrc.replace(colorPurple,colorBlack);
+        $(this).find('.icon_change img').attr('src',imgChangeB);
     };
     
-    // function iconMouseIn(e){
-    //     e.preventDefault();
-        
-    //     // var iconP = ['img/main/icon/vegetable_p.png',
-    //     //             'img/main/icon/fruit_p.png' ];
-    //     // var vegetableP = 'img/main/icon/vegetable_p.png';
-    //     $(this).find('img').attr('src',vegetableP);
-    //     $(tarGat).find('img').attr('src',fruitP);
-    // };
-    // function iconMouseout(e){
-    //     e.preventDefault();
-    //     $(this).find('img').attr('src',vegetableP);
-    //     // $(this).find('img').attr('src',fruitB);
-    // };
     // end
 });
