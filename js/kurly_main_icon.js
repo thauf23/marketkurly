@@ -46,15 +46,31 @@ $(function(){
     });
     function iconMouseIn(e){
         var iconP = ['img/main/icon/vegetable_p.png',
-                    'img/main/icon/fruit_p.png' ];
-        var tarGat = e.target;
-        for(var i = 0; i<iconP.length; i++){
-            if( $(tarGat).eq(i) == iconP[i]){
-                $(tarGat).find('img').attr('src',iconP[i]);
-            }
-            i=0;
-        }
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',
+                    'img/main/icon/fruit_p.png',];
+
+            var liArr = $(this).index();
+            // if(){
+                // $('.header_2depth ul li').eq(i).find('img').attr('src',iconP[i]);
+                $(this).find('img').attr('src',iconP[liArr]);
+            // }
+            console.log(liArr)
+        // }
     };
+    
     // function iconMouseIn(e){
     //     e.preventDefault();
         
